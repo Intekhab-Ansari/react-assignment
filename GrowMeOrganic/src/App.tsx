@@ -6,12 +6,15 @@ const App = () => {
 
   const [page, setPage] = useState(0);
   const [selectedIds, setSelectedIds] = useState<Set<number>>(new Set());
-
   const{artworks, total, loading, page_size} = useArtWorks(page);
 
   return (
     <div style={{padding:24}}>
-      <h2>Art Institute Artwork List</h2>
+      <p style={{marginTop:10}}>
+        Selected: {selectedIds.size} rows
+      </p>
+
+      
 
       <ArtWorkTable
         data={artworks}
@@ -23,6 +26,8 @@ const App = () => {
         onPageChange={setPage}
         onSelectionUpdate={setSelectedIds}
       />
+
+      
     </div>
   )
 }

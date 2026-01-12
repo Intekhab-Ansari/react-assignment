@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import type { Artwork } from "../type/ArtWork";
+import type { Artwork } from "../type/artWork";
 
 const page_size = 12;
 
