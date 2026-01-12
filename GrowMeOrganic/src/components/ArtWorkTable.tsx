@@ -130,7 +130,6 @@ export function ArtWorkTable({
         selection={selectedRows}
         onSelectionChange={handleSelectionChange}
 
-        
         // footer
         paginatorTemplate={{
           layout: "CurrentPageReport PrevPageLink PageLinks NextPageLink",
